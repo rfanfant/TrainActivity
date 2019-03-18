@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+
+
+</head>
+
+<body>
+
+
+    <div>
+        <header id="headerTitle">
+            <h1>Employee Data Management</h1>
+            <h2>A Comprehensive Directory of Employee Billable Hours</h2>
+        </header>
+    </div>
+    <br>
+    <!-- table to display people -->
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <p class="subtitleForm">Current Employees<p>
+            <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Monthly Rate($)</th>
+                <th scope="col">Total Billed($)</th>
+            </tr>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <th scope="row"></th>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <p class="subtitleForm">Add Employee</p>
+    <form id="employeeForm">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Employee Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Employee Name">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Role</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Role">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput3">Start Date (DD/MM/YYYY)</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Start Date">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput4">Monthly Rate</label>
+            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Monthly Rate">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+
+    <!-- Added index. JS -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
+
+    <!-- Added Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="assets/javascript/TrainActivity.js"></script>
+
+
+</body>
